@@ -1,8 +1,30 @@
-@extends('layout.main')
+@extends('layout.user_main')
 
 @section('container')
 <!-- Home -->
-<article id="top" class="wrapper style1">
+
+
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+        <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
+        <p class="lead">A great starter layout for a landing page</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Page Content -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="font-weight-light">Page Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+  </div>
+</section>
+</div>
+
+<!-- <article id="top" class="wrapper style1">
 				<div class="container">
 					<div class="row">
 						<div class="col-4 col-5-large col-12-medium">
@@ -20,7 +42,7 @@
 			</article>
 
 		<!-- Work -->
-			<article id="work" class="wrapper style2">
+			<!-- <article id="work" class="wrapper style2">
 				<div class="container">
 					<header>
 						<h2>Here's all the stuff I do.</h2>
@@ -57,7 +79,7 @@
 			</article>
 
 		<!-- Portfolio -->
-			<article id="portfolio" class="wrapper style3">
+			<!-- <article id="portfolio" class="wrapper style3">
 				<div class="container">
 					<header>
 						<h2>Here’s some stuff I made recently.</h2>
@@ -111,7 +133,7 @@
 						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
 						<a href="#contact" class="button large scrolly">Get in touch with me</a>
 					</footer>
-				</div>
-			</article>
+				</div>  -->
+			<!-- </article>  -->
 
 @endsection

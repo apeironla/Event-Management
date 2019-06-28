@@ -4,17 +4,21 @@ namespace App\Http\Controllers;
 
 use App\Package;
 use Illuminate\Http\Request;
+use Auth;
 
 class PackageController extends Controller
 {
+
     
     public function index_package()
     {
+    
         $all = Package::all();
         //dd($all);
         return view('package.index_package',['data'=>$all]);
     }
 
+   
     public function create_package()
     {
         return view('package.new_package');
@@ -49,6 +53,17 @@ class PackageController extends Controller
         $package = Package::find($package);
         return view('package.edit_package',['id'=>$package]);
     }
+
+    public function package()
+    {
+        //dd($course);
+        //$package = Package::find($package);
+        $all = Package::all();
+        //dd($all);
+        return view('user.package',['data'=>$all]);
+    
+    }
+
 
     public function update_package(Request $request, Package $package)
     {

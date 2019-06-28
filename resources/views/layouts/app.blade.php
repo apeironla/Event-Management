@@ -1,39 +1,30 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-		<!-- CSRF Token -->
-		<meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>Event Management</title>
 
-		<title>Event Management</title>
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!-- <link rel="stylesheet" href="{{asset('assets/css/main.css')}}" /> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-		<!-- Scripts -->
-		<script src="{{ asset('js/app.js') }}" defer></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{{asset('assets/css/main.css')}}" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
-		<!-- Fonts -->
-		<link rel="dns-prefetch" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-
-		<!-- Styles -->
-		<link href="{{ asset('css/app.css') }}" rel="stylesheet">
-	</head>
-	<body class="is-preload">
-	<div id="app">
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+</head>
+<body>
+<div id="app">
         
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
@@ -42,7 +33,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                    <li class="nav-item"><a  class="nav-link" href="{{route('land')}}">Home</a></li>
+					<li class="nav-item"><a  class="nav-link" href="{{route('package')}}">Package</a></li>
+					<li class="nav-item"><a  class="nav-link" href="{{route('gallery')}}">Gallery</a></li>
+					<li class="nav-item"><a   class="nav-link" href="">Contact</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -81,18 +75,15 @@
                 
             </div>
         </nav>
-        <nav id="nav">
-                    <!-- <li><a href="{{route('land')}}">Home</a></li> -->
-                    <li><a href="{{route('index_event')}}">Event</a></li>
-					<li><a href="{{route('index_package')}}">Package</a></li>
-					<li><a href="{{route('admin_gallary')}}">Gallary</a></li>
-					<li><a href="{{route('sendemail')}}">Contact</a></li>
-                
-                </nav>
 
-        
+      
+                    
+                
+               
 
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+</body>
+</html>

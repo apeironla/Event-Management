@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.user_main')
 
 @section('container')
 
@@ -7,9 +7,9 @@
          @if (session()->has('success'))
             <h6 class="alert alert-success mt-5">{{ session('success') }}</h6>
          @endif
-         <div style ="margin-bottom: 20px">
+         <!-- <div style ="margin-bottom: 20px">
          <button type="button" class="btn btn-link" style = "float: left"><a href = "{{route('create_package')}}">Add new package</a></button>
-         </div>
+         </div> -->
   <table class="table table-bordered mt-5">
     <thead class="" >
       <tr>
@@ -19,10 +19,9 @@
         <th>Photographer</th>
         <th>Power</th>
         <th>Decoration</th>
-        <th>Deadline</th>
 
-        <th>Edit</th>
-        <th>Delete</th>
+        <th>Action</th>
+        
       </tr>
     </thead>
     <tbody>
@@ -35,15 +34,13 @@
         <td>{{$x->photographer}}</td>
         <td>{{$x->power}}</td>
         <td>{{$x->decoration}}</td>
-        <td>{{$x->deadline}}</td>
 
-        <td class="pl-5">
-        <a href ="{{route('edit_package',$x->id)}}" class="btn btn-info ml-2">Edit</a></td>
-        <td class="pl-5"><form onsubmit = "return confirm('are you sure you want to delete this info?')" action = "{{route('destroy_package', $x->id)}}" method ="post" class = "d-inline-block">
-           {{csrf_field()}}
-           {{method_field('delete')}}
-           <button type = "submit" class="btn btn-danger">Delete</button>
-           </form></td>
+        <td class="pl-5">   
+        <a href ="{{route('book_form', $x->id)}}" class="btn btn-info ml-2">Book</a></td>
+         
+         </td>
+         
+        
       </tr>
     
     @endforeach

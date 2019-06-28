@@ -209,10 +209,15 @@ input, select, textarea {
 	header {
 		margin: 0 0 3em 0;
 	}
-
-		header > p {
-			font-size: 1.25em;
+	header p {
+		color: rgba(255, 255, 255, 0.5);
+		position: relative;
+		top: -0.25em;
+		font-size: 1.25em;
 			margin: 0;
+	}
+		header > p {
+			
 		}
 
 	footer {
@@ -2431,3 +2436,23 @@ input, select, textarea {
 					}
 
 	}
+
+	.masthead {
+		height: 100vh;
+		min-height: 500px;
+		background-image: url('http://www.anantabd.net/images/banner1.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	  }
+
+	  .box{
+		width:600px;
+		margin:0 auto;
+		border:1px solid #ccc;
+	   }
+	   .has-error
+	   {
+		border-color:#cc0000;
+		background-color:#ffff99;
+	   }

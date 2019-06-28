@@ -7,6 +7,9 @@
          @if (session()->has('success'))
             <h6 class="alert alert-success mt-5">{{ session('success') }}</h6>
          @endif
+         <div style ="margin-bottom: 20px">
+         <button type="button" class="btn btn-link" style = "float: left"><a href = "{{route('create_event')}}">Add new event</a></button>
+         </div>
   <table class="table table-bordered mt-5">
     <thead class="" >
       <tr>

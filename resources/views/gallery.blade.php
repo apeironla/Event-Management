@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.user_main')
 
 @section('container')
 
@@ -17,44 +17,44 @@
     <div class="mdb-lightbox">
 
       <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(145).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(145).jpg" class="img-fluid">
+        <a href="" data-size="1600x1067">
+          <img alt="picture" src="/images/1.jpg" class="img-fluid">
         </a>
       </figure>
 
       <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(150).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(150).jpg" class="img-fluid" />
+        <a href="" data-size="1600x1067">
+          <img alt="picture" src="/images/2.jpg" class="img-fluid" />
         </a>
       </figure>
 
       <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(152).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(152).jpg" class="img-fluid" />
+        <a href="" data-size="1600x1067">
+          <img alt="picture" src="/images/10.jpg" class="img-fluid" />
         </a>
       </figure>
 
-      <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(42).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(42).jpg" class="img-fluid" />
+      <!-- <figure class="col-md-4">
+        <a href="" data-size="1600x1067">
+          <img alt="picture" src="/images/11.jpg" class="img-fluid" />
         </a>
-      </figure>
+      </figure> -->
 
-      <figure class="col-md-4">
+      <!-- <figure class="col-md-4">
         <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(151).jpg" data-size="1600x1067">
           <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(151).jpg" class="img-fluid" />
         </a>
-      </figure>
+      </figure> -->
 
-      <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(40).jpg" class="img-fluid" />
+      <!-- <figure class="col-md-4">
+        <a href="" data-size="1600x1067">
+          <img alt="picture" src="/images/5.jpg" class="img-fluid" />
         </a>
-      </figure>
+      </figure> -->
 
       <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(148).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(148).jpg" class="img-fluid" />
+        <a href="" data-size="1600x1067">
+          <img alt="picture" src="/images/6.jpg" class="img-fluid" />
         </a>
       </figure>
 
@@ -65,8 +65,8 @@
       </figure>
 
       <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(149).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(149).jpg" class="img-fluid" />
+        <a href="" data-size="1600x1067">
+          <img alt="picture" src="/images/7.jpg" class="img-fluid" />
         </a>
       </figure>
 

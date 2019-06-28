@@ -81,16 +81,14 @@
                 
             </div>
         </nav>
+
         <nav id="nav">
-                    <!-- <li><a href="{{route('land')}}">Home</a></li> -->
-                    <li><a href="{{route('index_event')}}">Event</a></li>
-					<li><a href="{{route('index_package')}}">Package</a></li>
-					<li><a href="{{route('admin_gallary')}}">Gallary</a></li>
+                    <li><a href="{{route('land')}}">Home</a></li>
+					<li><a href="{{route('package')}}">Package</a></li>
+					<li><a href="{{route('gallery')}}">Gallery</a></li>
 					<li><a href="{{route('sendemail')}}">Contact</a></li>
                 
                 </nav>
-
-        
 
         <main class="py-4">
             @yield('content')
